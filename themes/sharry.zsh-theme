@@ -3,7 +3,7 @@
 if [[ "$USER" == "root" ]]; then USERCOLOR="red"; else USERCOLOR="green"; fi
 
 PROMPT=$'\
-%{$fg_bold[$USERCOLOR]%}%n on %{$fg_bold[$USERCOLOR]%}%m %{$fg_no_bold[magenta]%}[%~] $(git_super_status)\n%(?,%{$fg_bold[green]%}➜,%{$fg_bold[red]%}➜) %{$reset_color%}'
+%{$fg_bold[$USERCOLOR]%}%n %{$fg_no_bold[magenta]%}[%~] $(git_super_status)\n%(?,%{$fg_bold[green]%}➜,%{$fg_bold[red]%}➜) %{$reset_color%}'
 
 # Format for git_prompt_info()
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%} "
